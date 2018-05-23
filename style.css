@@ -19,7 +19,14 @@ body
     margin: auto;
 }
 
+@media all and (max-width: 1024px)
 
+{
+    #hautdepage
+    {
+        width: auto;
+    }
+}
 section h1, footer h1, nav a
 
 {
@@ -87,6 +94,34 @@ nav a:hover
     border-bottom: 3px solid #760001;
 }
 
+@media all and (max-width: 1024px)
+
+{
+    nav
+    {
+       width: auto;
+        text-align: left;
+    }
+    nav ul
+    {
+        flex-direction: column;
+    }
+
+    nav li
+    {
+        padding-left: 3px;
+    }
+
+    nav a
+    {
+        font-size: 1.1em;
+    }
+    nav a:hover
+    {
+      border-bottom: 0;
+    }
+}
+
 #banniere_image
 
 {
@@ -103,6 +138,15 @@ nav a:hover
 
 }
 
+@media all and (max-width: 1024px)
+
+{
+    #banniere_image
+
+    {
+        display: none;
+    }
+}
 
 #banniere_description
 
@@ -153,7 +197,7 @@ section
 article, aside
 
 {
-    text-align: left;
+    text-align: justify;
 
 }
 
@@ -167,9 +211,6 @@ article
 article p
 {
     font-size: 0.8em;
-    width: 600px;
-    height:400px;
-    overflow: auto;
 }
 
 
@@ -186,6 +227,39 @@ aside
     font-size: 0.9em;
 
 }
+
+@media all and (max-width: 1024px)
+
+{
+    section
+    {
+        flex-direction: column;
+    }
+
+    article, aside
+    {
+        width: auto;
+        margin-bottom: 15px;
+    }
+
+    #fleche_bulle
+    {
+        display: none;
+    }
+
+    #photogandoulf img
+    {
+        width: 110px;
+        float: right;
+        margin-left: 15px;
+    }
+
+    aside p:last-child
+    {
+        text-align: center;
+    }
+}
+
 #fleche_bulle
 {
 
